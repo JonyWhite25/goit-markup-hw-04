@@ -46,6 +46,8 @@ img {
 
 .link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list.current {
@@ -120,9 +122,17 @@ img {
     letter-spacing: 0.02em;
 }
 
+.link:hover .icon,
+.link:focus .icon,
 .link:hover,
 .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.icon {
+    margin-right: 10px;
+    fill: #757575;
 }
 
 .logo-studio-header {
@@ -246,6 +256,15 @@ img {
 .teammate:last-child {
     margin-right: 0px;
 }
+
+.wrapper-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--accent-background);
+}
+
 
 /* .foto-teammate {
     margin-bottom: 30px;
