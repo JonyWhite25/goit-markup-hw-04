@@ -8,6 +8,7 @@
     --main-background-color: #ffffff;
     --secondary-background-color: #2f303a;
     --accent-background: #f5f4fa;
+    --icon-color:#AFB1B8;
 }
 
 body {
@@ -257,6 +258,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
 }
 
 .teammate:last-child {
@@ -269,8 +271,46 @@ img {
     align-items: center;
     height: 120px;
     background-color: var(--accent-background);
+    border-radius: 4px;
 }
 
+/* ========clients========== */
+.clients {
+    justify-content: space-between;
+}
+
+/* .clients-list-item */
+
+.clients-list-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-list-icon {
+fill: var(--icon-color)
+}
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon{
+fill: var(--accent-color);
+}
+
+
+/* .social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--secondary-text-color);
+} */
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+border-color: var(--accent-color);
+}
 
 /* .foto-teammate {
     margin-bottom: 30px;
@@ -310,7 +350,7 @@ img {
     justify-content: space-between;
 }
 .social-list-icon {
-    fill: var(--text-color)
+    fill: var(--icon-color)
 }
 
 .social-list-link {
@@ -323,9 +363,14 @@ img {
     border-radius: 50%;
 }
 
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--secondary-text-color);
+}
+
 .social-list-link:hover,
-.social-list-link:focus, {
-    fill: var(--accent-color);
+.social-list-link:focus  {
+    background-color: var(--accent-color);
 }
 /* ========end components========= */
 
