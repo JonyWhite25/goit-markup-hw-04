@@ -258,6 +258,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-background-color);
     
 }
 
@@ -272,6 +273,7 @@ img {
     height: 120px;
     background-color: var(--accent-background);
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 /* ========clients========== */
@@ -337,7 +339,6 @@ border-color: var(--accent-color);
 .wrapper-img {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--main-background-color);
 }
 
 
@@ -345,12 +346,17 @@ border-color: var(--accent-color);
 .social-list {
     display: flex;
     justify-content: center;
-    width: 206px;
     margin: 0 auto;
-    justify-content: space-between;
 }
 .social-list-icon {
     fill: var(--icon-color)
+}
+.social-list-item {
+    margin-right: 10px;
+}
+
+.social-list-item:last-child {
+    margin-right: 0px;
 }
 
 .social-list-link {
@@ -441,6 +447,12 @@ border-color: var(--accent-color);
 
 .footer-link-item {
     margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.social-list-footer {
+    display: flex;
+    margin: 0 auto;
 }
 
 .footer-social {
@@ -545,3 +557,4 @@ border-color: var(--accent-color);
     border: 1px solid #ececec;
     border-top: none;
 }
+  
